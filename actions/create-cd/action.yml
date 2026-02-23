@@ -25,7 +25,7 @@ inputs:
   filter_by_profile:
     description: Name of the profile in the workspace to filter controls by
     required: false
-  dry_run: 
+  dry_run:
     description: "Runs tasks without pushing changes to the repository."
     required: false
     default: "false"

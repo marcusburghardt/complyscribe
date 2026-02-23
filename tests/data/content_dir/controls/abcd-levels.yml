@@ -79,7 +79,7 @@ controls:
       AC-1 - ACCESS CONTROL POLICY AND PROCEDURES
     levels:
       - low
-  
+
   - id: AC-2
     status: manual
     levels:

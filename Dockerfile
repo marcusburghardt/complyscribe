@@ -42,7 +42,7 @@ COPY . "/build"
 RUN python3.9 -m venv "$VENV_PATH" && \
     . "$VENV_PATH"/bin/activate && \
     python3.9 -m pip install --no-cache-dir --upgrade pip setuptools && \
-    if [ "$INSTALL_PLUGINS" == "true" ]; then \
+    if [ "$INSTALL_PLUGINS" = "true" ]; then \
       poetry install --with plugins --no-root; \
     else \
       poetry install --no-root; \
