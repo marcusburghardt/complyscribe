@@ -22,13 +22,13 @@ jobs:
     outputs:
       rules_changed: ${{ steps.changes.outputs.rules }}
     steps:
-    - uses: actions/checkout@v4
-    - uses: dorny/paths-filter@v3
-      id: changes
-      with:
-        filters: |
-          rules:
-            - 'rules/**'
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            rules:
+              - 'rules/**'
   rules-transform-and-autosync:
     name: Rules Transform and AutoSync
     runs-on: ubuntu-latest
