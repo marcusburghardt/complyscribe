@@ -1,0 +1,6 @@
+---
+ignored:
+  - DL3007  # Using latest is intentional for base images
+  - DL3013  # Pip install without pinning (pip/setuptools upgrades)
+  - DL3033  # yum install without version pinning
+  - DL3041  # dnf install without version pinning

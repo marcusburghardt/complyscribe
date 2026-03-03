@@ -1,6 +1,6 @@
 site_name: complyscribe
 site_description: Documentation for complyscribe.
-repo_name: complyscribe 
+repo_name: complyscribe
 repo_url: https://github.com/complytime/complyscribe/
 
 theme:
@@ -19,12 +19,12 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-    - scheme: slate 
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
 
 markdown_extensions:
   - md_in_html
@@ -43,16 +43,15 @@ plugins:
   - include-markdown
 
 nav:
-- Overview: 
-  - QuickStart: index.md
-  - Architecture:
-    - Diagrams: architecture/diagrams/c4.md
-- Tutorials:
-  - GitHub: tutorials/github.md
-  - Authoring: tutorials/authoring.md
-  - Sync CaC to OSCAL: tutorials/sync-cac-content.md
-  - Sync OSCAL to CaC: tutorials/sync-oscal-content.md
-- Troubleshooting: troubleshooting.md
-- Contributing: contributing.md
-
+  - Overview:
+      - QuickStart: index.md
+      - Architecture:
+          - Diagrams: architecture/diagrams/c4.md
+  - Tutorials:
+      - GitHub: tutorials/github.md
+      - Authoring: tutorials/authoring.md
+      - Sync CaC to OSCAL: tutorials/sync-cac-content.md
+      - Sync OSCAL to CaC: tutorials/sync-oscal-content.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md
 
