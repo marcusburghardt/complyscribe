@@ -63,11 +63,17 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - uses: ./.github/actions/e2e-testing
 
-  test-integration:
-    runs-on: 'ubuntu-24.04'
-    permissions:
-      contents: read
-    steps:
-      - name: Check out
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - uses: ./.github/actions/test-integration
+  # TEMPORARILY DISABLED: Integration tests depend on complyctl, which is undergoing
+  # breaking CLI changes (plugin separation, OSCAL artifact cleanup). These tests will
+  # be re-enabled once complyctl stabilizes.
+  #
+  # To re-enable: uncomment the job block below and remove this comment block.
+  #
+  # test-integration:
+  #   runs-on: 'ubuntu-24.04'
+  #   permissions:
+  #     contents: read
+  #   steps:
+  #     - name: Check out
+  #       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+  #     - uses: ./.github/actions/test-integration
