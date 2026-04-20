@@ -1,6 +1,10 @@
 ---
 extends: default
 
+ignore:
+  # Jinja-templated YAML files are not valid YAML
+  - tests/data/content_dir/linux_os/
+
 # https://yamllint.readthedocs.io/en/stable/rules.html
 rules:
   comments: disable
