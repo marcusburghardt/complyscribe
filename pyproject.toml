@@ -37,7 +37,7 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.1.2"
-black = "^25.11.0"
+black = {version = "^26.3.1", python = ">=3.10"}
 mypy = "^1.19.1"
 isort = "^6.1.0"
 safety = "^3.7.0"
