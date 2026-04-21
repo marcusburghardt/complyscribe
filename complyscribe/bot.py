@@ -16,7 +16,6 @@ from complyscribe.provider import GitProvider, GitProviderException
 from complyscribe.reporter import BotResults
 from complyscribe.tasks.base_task import TaskBase, TaskException
 
-
 logger = logging.getLogger(__name__)
 
 

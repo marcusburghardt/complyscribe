@@ -10,7 +10,6 @@ from typing import Any, Callable, Dict, Sequence, TypeVar
 
 import click
 
-
 F = TypeVar("F", bound=Callable[..., Any])
 
 

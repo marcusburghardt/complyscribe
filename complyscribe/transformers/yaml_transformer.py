@@ -3,6 +3,7 @@
 
 
 """YAML transformer for rule authoring."""
+
 import logging
 import pathlib
 from io import StringIO
@@ -25,7 +26,6 @@ from complyscribe.transformers.trestle_rule import (
     TrestleRule,
     convert_errors,
 )
-
 
 logger = logging.getLogger(__name__)
 

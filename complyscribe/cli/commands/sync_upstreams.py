@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Module for upstream command"""
+
 import logging
 import sys
 from typing import Any, List
@@ -18,7 +19,6 @@ from complyscribe.cli.utils import comma_sep_to_list
 from complyscribe.const import ERROR_EXIT_CODE
 from complyscribe.tasks.base_task import ModelFilter, TaskBase
 from complyscribe.tasks.sync_upstreams_task import SyncUpstreamsTask
-
 
 logger = logging.getLogger(__name__)
 

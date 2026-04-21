@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Module for sync cac content command"""
+
 import logging
 import os
 import pathlib
@@ -23,7 +24,6 @@ from complyscribe.tasks.base_task import TaskBase
 from complyscribe.tasks.sync_cac_catalog_task import SyncCacCatalogTask
 from complyscribe.tasks.sync_cac_content_profile_task import SyncCacContentProfileTask
 from complyscribe.tasks.sync_cac_content_task import SyncCacContentTask
-
 
 logger = logging.getLogger(__name__)
 

@@ -16,16 +16,15 @@ pre-commit:
 
 lint:
 	@poetry check --lock
-	@poetry run isort --profile=black --lines-after-imports=2 \
-	--check-only $(TESTS) $(PYMODULE)
 	@poetry run black --check $(TESTS) $(PYMODULE) --diff
+	@poetry run isort --profile=black --check-only $(TESTS) $(PYMODULE)
 	@poetry run mypy $(PYMODULE) $(TESTS)
 	@poetry run flake8
 .PHONY: lint
 
 format:
-	@poetry run isort --profile=black --lines-after-imports=2 $(TESTS) $(PYMODULE)
 	@poetry run black $(TESTS) $(PYMODULE)
+	@poetry run isort --profile=black $(TESTS) $(PYMODULE)
 .PHONY: format
 
 test:

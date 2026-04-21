@@ -16,7 +16,6 @@ from complyscribe.tasks.authored.base_authored import (
 )
 from complyscribe.tasks.base_task import ModelFilter, TaskBase, TaskException
 
-
 logger = logging.getLogger(__name__)
 
 

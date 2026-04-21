@@ -17,7 +17,6 @@ from complyscribe.utils import (
     write_cac_yaml_ordered,
 )
 
-
 logger = logging.getLogger(__name__)
 
 

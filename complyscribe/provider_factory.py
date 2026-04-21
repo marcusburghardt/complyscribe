@@ -9,7 +9,6 @@ from complyscribe.github import GitHub
 from complyscribe.gitlab import GitLab
 from complyscribe.provider import GitProvider
 
-
 logger = logging.getLogger(__name__)
 
 

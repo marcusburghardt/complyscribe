@@ -10,7 +10,6 @@ from typing import List
 
 import trestle.common.log as trestle_log
 
-
 _logger = logging.getLogger("complyscribe")
 
 

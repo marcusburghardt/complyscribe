@@ -30,7 +30,6 @@ from complyscribe.transformers.trestle_rule import (
 )
 from complyscribe.transformers.yaml_transformer import FromRulesYAMLTransformer
 
-
 logger = logging.getLogger(__name__)
 
 

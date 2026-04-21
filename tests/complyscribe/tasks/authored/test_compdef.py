@@ -20,7 +20,6 @@ from complyscribe.tasks.authored.compdef import (
 from complyscribe.transformers.yaml_transformer import ToRulesYAMLTransformer
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_filter_prof = "simplified_filter_profile"
 test_comp = "test_comp"

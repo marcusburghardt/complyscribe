@@ -19,7 +19,6 @@ from complyscribe.tasks.authored.profile import AuthoredProfile
 from complyscribe.tasks.authored.ssp import AuthoredSSP
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_comp = "test_comp"
 test_ssp_output = "test-ssp"

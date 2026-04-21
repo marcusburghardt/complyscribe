@@ -16,7 +16,6 @@ from complyscribe.tasks.authored.profile import AuthoredProfile
 from complyscribe.tasks.base_task import TaskException
 from complyscribe.tasks.sync_cac_content_profile_task import SyncCacContentProfileTask
 
-
 test_cat = "simplified_nist_catalog"
 test_product = "rhel8"
 test_policy = "1234-levels"

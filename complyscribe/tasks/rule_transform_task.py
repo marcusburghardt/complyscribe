@@ -20,7 +20,6 @@ from complyscribe.transformers.base_transformer import RulesTransformerException
 from complyscribe.transformers.csv_transformer import CSVBuilder
 from complyscribe.transformers.yaml_transformer import ToRulesYAMLTransformer
 
-
 logger = logging.getLogger(__name__)
 
 

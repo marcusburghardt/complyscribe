@@ -12,7 +12,6 @@ from typing import Any, Dict, List, Optional
 import yaml
 from pydantic import BaseModel, DirectoryPath, ValidationError
 
-
 logger = logging.getLogger(__name__)
 
 

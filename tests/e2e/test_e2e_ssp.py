@@ -33,7 +33,6 @@ from complyscribe.tasks.authored.ssp import SSPIndex
 from tests.e2e.e2e_testutils import E2ETestRunner
 from tests.testutils import clean, prepare_upstream_repo, setup_for_ssp
 
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 

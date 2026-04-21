@@ -20,7 +20,6 @@ from complyscribe.tasks.authored.base_authored import AuthoredObjectException
 from complyscribe.tasks.authored.ssp import AuthoredSSP, SSPIndex
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_prof_filter = "simplified_filter_profile"
 

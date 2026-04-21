@@ -46,7 +46,6 @@ from complyscribe.transformers.trestle_rule import (
     get_default_rule,
 )
 
-
 logger = logging.getLogger(__name__)
 
 

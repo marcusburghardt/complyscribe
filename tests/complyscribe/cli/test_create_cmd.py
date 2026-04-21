@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Unit test for create commands ssp and cd"""
+
 import pathlib
 from typing import Tuple
 
@@ -10,7 +11,6 @@ from git import Repo
 
 from complyscribe.cli.commands.create import create_cmd
 from tests.testutils import setup_for_compdef, setup_for_ssp
-
 
 test_prof = "simplified_nist_profile"
 test_comp_name = "test_comp"

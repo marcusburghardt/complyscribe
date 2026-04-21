@@ -30,7 +30,6 @@ from complyscribe.tasks.authored.base_authored import (
     AuthoredObjectException,
 )
 
-
 logger = logging.getLogger(__name__)
 
 

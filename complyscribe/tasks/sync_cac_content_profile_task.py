@@ -12,7 +12,6 @@ from complyscribe.tasks.authored.profile import AuthoredProfile, CatalogControlR
 from complyscribe.tasks.base_task import TaskBase, TaskException
 from complyscribe.utils import load_controls_manager
 
-
 logger = logging.getLogger(__name__)
 
 

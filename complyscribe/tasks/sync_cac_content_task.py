@@ -46,7 +46,6 @@ from complyscribe.transformers.cac_transformer import (
 )
 from complyscribe.utils import load_controls_manager
 
-
 logger = logging.getLogger(__name__)
 
 SECTION_PATTERN = r"Section ([a-z]):"

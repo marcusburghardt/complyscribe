@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2025 Red Hat, Inc.
+import logging
 import os
 import sys
 from typing import Dict
+
 from ssg.profiles import _load_yaml_profile_file, get_profiles_from_products
 
 from complyscribe.utils import load_controls_manager
-
-import logging
 
 """
 Description:
@@ -77,11 +77,7 @@ def main(product, content_root_dir):
     for profile in profiles:
         profile_name = profile.profile_id + ".profile"
         cac_profile = os.path.join(
-            content_root_dir,
-            "products",
-            product,
-            "profiles",
-            profile_name
+            content_root_dir, "products", product, "profiles", profile_name
         )
         policy_levels = get_controls(cac_profile, content_root_dir, product)
         relationship = {}
@@ -98,8 +94,10 @@ def main(product, content_root_dir):
 if __name__ == "__main__":
     # Ensure that the script is run with the correct number of arguments
     if len(sys.argv) != 3:
-        logging.warning("Usage: \
-            python get_mappings_profile_control_levels.py '<product>' '<content_root_dir>'")
+        logging.warning(
+            "Usage: \
+            python get_mappings_profile_control_levels.py '<product>' '<content_root_dir>'"
+        )
         sys.exit(1)
     try:
         # Extract arguments
