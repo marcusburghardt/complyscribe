@@ -3,13 +3,12 @@
 # Copyright Red Hat, Inc.
 
 import argparse
-import os
 import json
+import os
 import sys
-import urllib.request
 import urllib.error
 import urllib.parse
-
+import urllib.request
 
 CHUNK_SIZE = 8192
 

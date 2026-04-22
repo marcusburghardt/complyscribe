@@ -16,7 +16,6 @@ from trestle.oscal.profile import CombinationMethodValidValues, Profile
 from complyscribe.tasks.authored.profile import AuthoredProfile, CatalogControlResolver
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_cat = "simplified_nist_catalog"
 

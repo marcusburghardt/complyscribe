@@ -15,7 +15,6 @@ from complyscribe.cli.config import make_config, write_to_file
 from complyscribe.const import COMPLYSCRIBE_CONFIG_DIR
 from tests.testutils import clean, prepare_upstream_repo, setup_for_init
 
-
 TEST_CATALOG = "simplified_nist_catalog"
 TEST_CATALOG_PATH = "catalogs/simplified_nist_catalog/catalog.json"
 TEST_PROFILE = "simplified_nist_profile"

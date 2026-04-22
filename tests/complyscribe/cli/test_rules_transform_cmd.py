@@ -13,7 +13,6 @@ from git import Repo
 from complyscribe.cli.commands.rules_transform import rules_transform_cmd
 from tests.testutils import setup_for_compdef, setup_rules_view
 
-
 test_comp_name = "test_comp"
 test_md = "md_cd"
 

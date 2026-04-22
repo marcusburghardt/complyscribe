@@ -21,7 +21,6 @@ from complyscribe.tasks.regenerate_task import RegenerateTask
 from complyscribe.tasks.rule_transform_task import RuleTransformTask
 from complyscribe.transformers.yaml_transformer import ToRulesYAMLTransformer
 
-
 logger = logging.getLogger(__name__)
 
 

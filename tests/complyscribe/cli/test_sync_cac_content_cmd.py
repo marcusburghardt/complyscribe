@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Unit test for sync-cac-content command"""
+
 import pathlib
 from typing import Any, Generator, Tuple
 
@@ -19,7 +20,6 @@ from complyscribe.cli.commands.sync_cac_content import (
 )
 from complyscribe.utils import load_cac_policy
 from tests.testutils import TEST_DATA_DIR, setup_for_catalog, setup_for_profile
-
 
 test_product = "rhel8"
 # Note: data in test_content_dir is copied from content repo, PR:

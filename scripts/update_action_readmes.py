@@ -11,7 +11,7 @@ and update the Action Inputs and Action Outputs sections in the README.md
 import logging
 import os
 import sys
-from typing import Any, List, Dict
+from typing import Any, Dict, List
 
 from ruamel.yaml import YAML, YAMLError
 
@@ -48,7 +48,7 @@ def generate_inputs_markdown_table(inputs: Dict[str, Any]) -> str:
     """Generate the Action Inputs markdown table"""
     table = "| Name | Description | Default | Required |\n| --- | --- | --- | --- |\n"
     for name, input in inputs.items():
-        if input_description := input.get('description', None):
+        if input_description := input.get("description", None):
             input_description = format_descriptions(input_description)
         table += f"| {name} | {input_description} | {input.get('default', None)} | {input.get('required', None)} |\n"  # noqa E501
     return table
@@ -58,7 +58,7 @@ def generate_outputs_markdown_table(outputs: Dict[str, Any]) -> str:
     """Generate the Action Outputs markdown table"""
     table = "| Name | Description |\n| --- | --- |\n"
     for name, output in outputs.items():
-        if output_description := output.get('description', None):
+        if output_description := output.get("description", None):
             output_description = format_descriptions(output_description)
         table += f"| {name} | {output_description} |\n"
     return table
@@ -143,7 +143,9 @@ def main() -> None:
             action_yml: Dict[str, Any] = load_action_yml(action_yml_file)
             update_readme_file(readme_file, action_yml)
     except Exception as e:
-        logging.exception(f"Unexpected error during README.md updates: {e}", exc_info=True)
+        logging.exception(
+            f"Unexpected error during README.md updates: {e}", exc_info=True
+        )
         sys.exit(1)
 
 

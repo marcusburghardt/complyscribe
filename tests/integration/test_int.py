@@ -4,6 +4,7 @@
 """
 Integration tests for validating that complyscribe output is consumable by complyctl
 """
+
 import json
 import logging
 import os
@@ -21,7 +22,6 @@ from complyscribe.cli.commands.sync_cac_content import (
     sync_content_to_component_definition_cmd,
 )
 from tests.testutils import TEST_DATA_DIR, setup_for_catalog, setup_for_profile
-
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)

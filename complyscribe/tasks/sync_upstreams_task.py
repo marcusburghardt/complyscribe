@@ -23,7 +23,6 @@ from trestle.core.validator_factory import validator_factory
 from complyscribe import const
 from complyscribe.tasks.base_task import ModelFilter, TaskBase, TaskException
 
-
 logger = logging.getLogger(__name__)
 
 

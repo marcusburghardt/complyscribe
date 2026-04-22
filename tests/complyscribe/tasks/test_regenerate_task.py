@@ -25,7 +25,6 @@ from complyscribe.tasks.base_task import ModelFilter, TaskException
 from complyscribe.tasks.regenerate_task import RegenerateTask
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_comp = "test_comp"
 test_cat = "simplified_nist_catalog"

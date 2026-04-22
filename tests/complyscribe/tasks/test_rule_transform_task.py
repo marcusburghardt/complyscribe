@@ -18,7 +18,6 @@ from complyscribe.tasks.rule_transform_task import RuleTransformTask
 from complyscribe.transformers.yaml_transformer import ToRulesYAMLTransformer
 from tests.testutils import setup_rules_view
 
-
 test_comp = "test_comp"
 test_rules_dir = "test_rules_dir"
 

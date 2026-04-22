@@ -3,6 +3,7 @@
 
 
 """Testing module for complyscribe autosync command"""
+
 import pathlib
 from typing import Tuple
 

@@ -1,5 +1,5 @@
-import os
 import logging
+import os
 import sys
 from typing import List
 
@@ -27,7 +27,7 @@ def find_files_with_string(directory, search_string) -> List:
             file_path = os.path.join(dirpath, filename)
             # Open each file and search for the string
             try:
-                with open(file_path, 'r', encoding='utf-8') as file:
+                with open(file_path, "r", encoding="utf-8") as file:
                     content = file.read()
                     if search_string in content:
                         matching_files.append(file_path)
@@ -36,8 +36,8 @@ def find_files_with_string(directory, search_string) -> List:
                 continue
     items = []
     for file in matching_files:
-        filename = file.split('/')[-1]
-        name = filename.split('.')[0]
+        filename = file.split("/")[-1]
+        name = filename.split(".")[0]
         items.append(name)
     return items
 

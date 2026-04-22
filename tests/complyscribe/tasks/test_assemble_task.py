@@ -32,7 +32,6 @@ from complyscribe.tasks.authored.ssp import AuthoredSSP, SSPIndex
 from complyscribe.tasks.base_task import ModelFilter, TaskException
 from tests import testutils
 
-
 test_prof = "simplified_nist_profile"
 test_comp = "test_comp"
 test_cat = "simplified_nist_catalog"

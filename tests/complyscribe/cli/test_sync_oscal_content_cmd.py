@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Unit test for sync-cac-content command"""
+
 import json
 import os.path
 import pathlib
@@ -26,7 +27,6 @@ from tests.testutils import (
     setup_for_compdef,
     setup_for_profile,
 )
-
 
 test_product = "rhel8"
 # Note: data in test_content_dir is copied from content repo, PR:

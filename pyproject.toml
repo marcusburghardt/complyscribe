@@ -37,7 +37,7 @@ optional = true
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.1.2"
-black = "^25.11.0"
+black = {version = "^26.3.1", python = ">=3.10"}
 mypy = "^1.19.1"
 isort = "^6.1.0"
 safety = "^3.7.0"
@@ -51,7 +51,7 @@ mkdocs-include-markdown-plugin = "^7.2.1"
 optional = true
 
 [tool.poetry.group.tests.dependencies]
-pytest = "^8.4.2"
+pytest = {version = "^9.0.3", python = ">=3.10"}
 pytest-cov = "^7.1.0"
 pytest-skip-slow = "^0.0.5"
 responses = "^0.26.0"

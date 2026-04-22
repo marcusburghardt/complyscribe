@@ -30,7 +30,6 @@ from trestle.tasks.csv_to_oscal_cd import (
 
 from complyscribe import const
 
-
 logger = logging.getLogger(__name__)
 
 TRESTLE_CD_NS = f"{TRESTLE_GENERIC_NS}/cd"
@@ -255,10 +254,8 @@ class RulesTransformer:
                 rule_errors.append(error)
 
         if len(rule_errors) > 0:
-            raise RuntimeError(
-                f"Error loading rules: \
-                    \n{', '.join(rule_errors)}"
-            )
+            raise RuntimeError(f"Error loading rules: \
+                    \n{', '.join(rule_errors)}")
 
     def _add_rule(self, rule_id: str) -> Optional[str]:
         """Add a single rule to the rules_by_id dictionary."""

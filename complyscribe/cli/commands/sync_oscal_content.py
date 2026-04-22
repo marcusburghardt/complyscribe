@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Module for sync OSCAL models to cac content command"""
+
 import logging
 import pathlib
 from typing import Any, List
@@ -18,7 +19,6 @@ from complyscribe.tasks.base_task import TaskBase
 from complyscribe.tasks.sync_oscal_content_catalog_task import SyncOscalCatalogTask
 from complyscribe.tasks.sync_oscal_content_cd_task import SyncOscalCdTask
 from complyscribe.tasks.sync_oscal_content_profile_task import SyncOscalProfileTask
-
 
 logger = logging.getLogger(__name__)
 

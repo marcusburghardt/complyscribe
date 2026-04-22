@@ -3,6 +3,7 @@
 
 
 """Unit tests for CLI config module"""
+
 import pathlib
 
 import pytest

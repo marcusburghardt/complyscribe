@@ -27,7 +27,6 @@ from complyscribe import const
 from complyscribe.tasks.base_task import TaskBase
 from complyscribe.utils import load_cac_policy
 
-
 logger = logging.getLogger(__name__)
 
 

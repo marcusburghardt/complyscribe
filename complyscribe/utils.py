@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """Common utility functions."""
+
 import os
 import pathlib
 import textwrap

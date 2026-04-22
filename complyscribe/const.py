@@ -6,7 +6,6 @@
 
 import trestle.common.const as trestle_const
 
-
 # Common exit codes
 SUCCESS_EXIT_CODE = 0
 ERROR_EXIT_CODE = 1

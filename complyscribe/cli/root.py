@@ -14,7 +14,6 @@ from complyscribe.cli.commands.sync_cac_content import sync_cac_content_cmd
 from complyscribe.cli.commands.sync_oscal_content import sync_oscal_content_cmd
 from complyscribe.cli.commands.sync_upstreams import sync_upstreams_cmd
 
-
 EPILOG = "See our docs at https://redhatproductsecurity.github.io/complyscribe"
 
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])

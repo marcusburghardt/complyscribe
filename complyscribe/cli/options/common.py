@@ -18,7 +18,6 @@ from complyscribe.cli.config import ComplyScribeConfigError, load_from_file
 from complyscribe.cli.log import set_log_level
 from complyscribe.const import COMPLYSCRIBE_CONFIG_DIR, ERROR_EXIT_CODE
 
-
 F = TypeVar("F", bound=Callable[..., Any])
 
 logger = logging.getLogger(__name__)

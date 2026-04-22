@@ -2,6 +2,7 @@
 # Copyright (c) 2024 Red Hat, Inc.
 
 """ComplyScribe Sync OSCAL models to cac content Tasks"""
+
 import logging
 import os.path
 import pathlib
@@ -48,7 +49,6 @@ from complyscribe.utils import (
     to_literal_scalar_string,
     write_cac_yaml_ordered,
 )
-
 
 logger = logging.getLogger(__name__)
 

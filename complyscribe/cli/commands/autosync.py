@@ -19,7 +19,6 @@ from complyscribe.tasks.authored.base_authored import AuthoredObjectBase
 from complyscribe.tasks.base_task import ModelFilter, TaskBase
 from complyscribe.tasks.regenerate_task import RegenerateTask
 
-
 logger = logging.getLogger(__name__)
 
 

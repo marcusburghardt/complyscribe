@@ -1,11 +1,11 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2025 Red Hat, Inc.
+import logging
 import os
 import sys
 from typing import List
-from ssg.profiles import _load_yaml_profile_file, get_profiles_from_products
 
-import logging
+from ssg.profiles import _load_yaml_profile_file, get_profiles_from_products
 
 """
 Description:
@@ -51,11 +51,7 @@ def main(product, content_root_dir):
     for profile in profiles:
         profile_name = profile.profile_id + ".profile"
         cac_profile = os.path.join(
-            content_root_dir,
-            "products",
-            product,
-            "profiles",
-            profile_name
+            content_root_dir, "products", product, "profiles", profile_name
         )
         policy_id = get_profile_controls(cac_profile)
         policy_ids.extend(policy_id)

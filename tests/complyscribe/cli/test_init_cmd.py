@@ -3,6 +3,7 @@
 
 
 """Testing module for complyscribe init command"""
+
 import pathlib
 
 import yaml

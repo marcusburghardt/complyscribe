@@ -27,7 +27,6 @@ from complyscribe.cli.log import configure_logger
 from complyscribe.const import YAML_EXTENSION
 from complyscribe.utils import to_literal_scalar_string
 
-
 TEST_DATA_DIR = pathlib.Path(__file__).parent.resolve() / "data/"
 JSON_TEST_DATA_PATH = pathlib.Path(__file__).parent.resolve() / "data/json/"
 YAML_TEST_DATA_PATH = pathlib.Path(__file__).parent.resolve() / "data/yaml/"

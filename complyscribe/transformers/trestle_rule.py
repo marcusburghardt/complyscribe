@@ -9,7 +9,6 @@ Note: Any validation here should be done in the pydantic model and
 required for the rule to be valid.
 """
 
-
 from typing import Dict, List, Optional, Tuple, Union
 
 from pydantic import (

@@ -4,6 +4,7 @@
 """
 Module for complyscribe init command
 """
+
 import argparse
 import logging
 import os
@@ -23,7 +24,6 @@ from complyscribe.const import (
     COMPLYSCRIBE_KEEP_FILE,
     ERROR_EXIT_CODE,
 )
-
 
 logger = logging.getLogger(__name__)
 logging.getLogger("trestle.core.commands.init").setLevel("CRITICAL")

@@ -25,7 +25,6 @@ from complyscribe.transformers.trestle_rule import (
 )
 from tests.testutils import clean, repo_setup
 
-
 T = TypeVar("T")
 YieldFixture = Generator[T, None, None]
 

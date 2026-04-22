@@ -18,7 +18,6 @@ from complyscribe.tasks.rule_transform_task import RuleTransformTask
 from complyscribe.transformers.yaml_transformer import ToRulesYAMLTransformer
 from tests.testutils import setup_for_profile
 
-
 test_component_definition = "test_component_definition"
 test_profile = "simplified_nist_profile"
 test_md_path = "md_compdef"
