@@ -9,6 +9,8 @@ RUN dnf -y update && \
                    python3-pip \
                    python3-devel \
                    gcc-c++ && \
+    dnf clean all && \
+    yum clean all && \
     rm -rf /var/cache /var/log/dnf* /var/log/yum.*
 
 RUN useradd -u 1000 complyscribe
